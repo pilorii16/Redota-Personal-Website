@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="style.css">
+        <script src="navfix.js"></script>
+        <script src="hoverimg.js"></script>
+        <script src="footer.js"></script>
+
+
+    </head>
+    <body>
+        <!-- Navigation Header -->
+         <header>
+            <button class="nav-toggle" id="navToggle"></button>
+            <nav class="nav-right">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+                <a href="CV-REDOTA.pdf" class="btn" download>Download CV</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hi, I’m Precious</h1>
+                <p class="hero-overlap">I'm a frontend developer, UI/UX designer, graphic designer, and graphic artist with nearly 5 years of experience. I create visually engaging designs for web, mobile, and social media platforms.</p>
+                <div class="hero-info">
+                <div class="info-item">
+                    <span class="proicons--location"></span>
+                    <span class="info-text"><strong>Lucena City, Quezon Province</strong></span>
+                </div>
+                <div class="info-item">
+                    <span class="charm--graduate-cap"></span>
+                    <span class="info-text"><strong>Fresh Graduate</strong></span>
+                </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="img/me.png" alt="Precious Lorraine" class="hero-image" />
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+
+                <div class="about-card">
+                    <img src="img/vp1.jpg" 
+                        data-hover-images="img/vp2.jpg,img/vp3.jpg"
+                        alt="Experience 1"
+                        class="hover-slideshow">
+                    <p> I'm<strong> Precious Lorraine Redota,</strong> 23 years old. During my fourth year in college, I served as<strong> the Vice President and Overall Committee Supervisor of SYNTAX,</strong> 
+                        our department's organization, during my fourth year in college. I helped manage the organization, 
+                        guided different committees, and made sure they were doing their tasks well. I also led projects that 
+                        focused on career growth and using IT and programming in a good and responsible way.</p>
+                </div>
+
+                <div class="about-card reverse">
+                    <img src="img/ss1.jpg" 
+                        data-hover-images="img/ss2.jpg,img/ss3.jpg"
+                        class="hover-slideshow"
+                        alt="Experience 2">
+                    <p>In my third year of college, I became <strong>the Social Media Manager of SYNTAX</strong> 
+                        our department’s organization. I really enjoy making art, like drawing and creating digital illustrations,
+                         which helped me do well in this role. I planned the content, designed the visuals for our online pages, 
+                         and made sure posts were shared on time and matched the goals of the organization.</p>
+                </div>
+
+                <div class="about-card">
+                    <img src="img/cr1.jpg" 
+                            data-hover-images="img/cr2.jpg,img/cr3.jpg"
+                            alt="Experience 3"
+                            class="hover-slideshow">
+                    <p>I served as<strong> Class Representative</strong> from my second to third year in college. 
+                        I helped communicate between students and teachers, represented our class in meetings, and assisted in organizing academic activities. 
+                        In my second year, I was also part of the team that won first place in the <strong>ITSC 2023 L1FT_OFF Hackathon.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+
+       <section class="skills-section">
+            <h2>Skills</h2>
+            <div class="divider"></div>
+            <p>This skills, tools, and technologies I am really good at:</p>
+
+            <!-- First Row -->
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="img/figmaa.jpg" alt="Figma">
+                    <p>Figma</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/canva.jpg" alt="Canva">
+                    <p>Canva</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/sketchbook.jpg" alt="Sketchbook">
+                    <p>Sketchbook</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/google sheet.jpg" alt="Google Sheet">
+                    <p>Google Sheet</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/android studio.jpg" alt="Android Studio">
+                    <p>Android Studio</p>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="skills-grid second-row">
+                <div class="skill-item">
+                    <img src="img/visual studio.jpg" alt="Visual Studio Code">
+                    <p>Visual Studio Code</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/html.jpg" alt="HTML">
+                    <p>HTML</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/css.jpg" alt="CSS">
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="img/js.jpg" alt="JavaScript">
+                    <p>Javascript</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="about-section">
+            <div class="about-container">
+                <h2>Experience</h2>
+                <div class="divider"></div>
+                <p class="experience-subtitle">Here is a quick summary of my most recent experience</p>
+                
+
+                <!-- Experience Card 1 -->
+                <div class="experience-card">
+                    <img src="img/fr.jpg" 
+                    alt="Freelance Graphic Illustrator Logo" 
+                    class="experience-logo">
+                    <div class="experience-main">
+                        <div class="experience-header">
+                            <h4>Freelance Graphic Illustrator</h4>
+                            <span class="experience-date">September - November 2023</span>
+                        </div>
+                        <ul>
+                            <li>Designed custom prints aligned with client branding.</li>
+                            <li>Collaborated on concept refinement and color selection.</li>
+                            <li>Ensured compliance with print specifications and consistency.</li>
+                            <li>Delivered final artwork punctually with professional communication.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="experience-card">
+                    <img src="img/qtech.png" alt="Qtech Logo" class="experience-logo">
+                    <div class="experience-main">
+                        <div class="experience-header">
+                            <h4>Internship - Frontend Developer</h4>
+                            <span class="experience-date">February - May 2025</span>
+                        </div>
+                        <ul>
+                            <li>Developed a ticketing website for QTech client submissions.</li>
+                            <li>Collaborated with team to meet project requirements.</li>
+                            <li>Built a functional, responsive platform for report tracking.</li>
+                            <li>Met client and team expectations within the timeline.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="work" class="about-section">
+            <div class="about-container">
+                <h2>Works</h2>
+                <div class="divider"></div>
+                <p class="experience-subtitle">Some of the noteworthy projects I have built:</p>
+
+                <!-- Card 1 -->
+                <div class="work-card">
+                    <img src="img/art1.jpg" 
+                        data-hover-images="img/art2.jpg,img/art3.jpg,img/art4.jpg,img/art5.jpg,img/art6.jpg,img/art7.jpg"
+                        class="hover-slideshow"
+                        alt="Artworks">
+                    <div class="work-content">
+                        <h4>Artworks</h4>
+                        <p>Digital drawing has been one of my hobbies since 2020. I usually create digital art when I have 
+                            free time or receive commissions. You can visit my Facebook page,
+                            <a href="https://www.facebook.com/inenggg.Arts/" target="_blank" rel="noopener noreferrer"><strong>Inenggg Arts</strong></a>,
+                            to see more of my artworks.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Sketchbook</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="work-card reverse">
+                    <img src="img/c1.png" 
+                        data-hover-images="img/c2.png,img/c3.png,img/c4.png,img/c5.png,img/c6.png,img/c7.png,img/c8.png,img/c10.png,img/c11.png,img/c12.png,img/c13.png,img/c14.png,img/c15.png"
+                        class="hover-slideshow"
+                        alt="Capstone Projects">
+                    <div class="work-content">
+                        <h4>Capstone Project</h4>
+                        <p>Our capstone project was a booking application made for taxi drivers in our area, Lucena City. 
+                            Since it's more of a provincial setting, taxi drivers often struggle to find passengers and have 
+                            to roam around without a sure destination. To help solve this, our team developed a taxi booking 
+                            application for our client. I worked as the front-end developer on this project. It has already 
+                            been successfully defended and deployed.</p>
+                        <div class="tags">
+                            <span class="tag">Android Studio</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Google Maps API</span>
+                            <span class="tag">Visual Studio</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Vercel</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="work-card">
+                    <img src="img/qtech1.jpg" 
+                        data-hover-images="img/qtech2.jpg,img/qtech3.jpg,img/qtech4.jpg"
+                        class="hover-slideshow"
+                        alt="Internship Projects">
+                    <div class="work-content">
+                        <h4>Internship Project</h4>
+                        <p>The ticketing system website was a project assigned to us during our internship. 
+                            Its purpose is to help Qtech clients report issues without needing to ask for help in person. 
+                            Instead of face-to-face communication, clients can now send a ticket directly to Qtech's admin to 
+                            address their concerns. This project was a team effort, so I was not the only one who worked on it.</p>
+                        <div class="tags">
+                            <span class="tag">Visual Studio Code</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">XAMPP Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="work-card reverse">
+                    <img src="img/gd1.jpg" 
+                        data-hover-images="img/gd2.jpg,img/gd3.jpg,img/gd4.jpg,img/gd5.jpg,img/gd6.jpg,img/gd7.jpg"
+                        class="hover-slideshow"
+                        alt="Graphic Designs">
+                    <div class="work-content">
+                        <h4>Graphic Designs</h4>
+                        <p>These sample designs were created during my third year as the Social Media Manager. 
+                            Even after that, I continued reviewing the graphic designs made by the new officers since 
+                            I became an executive officer. Designing and checking these works helped me improve my own 
+                            skills and become better at creating visuals.</p>
+                        <div class="tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Canva</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="work-card">
+                    <img src="img/fr1.jpg" 
+                        data-hover-images="img/fr2.jpg,img/fr3.jpg,img/fr4.jpg,img/fr5.jpg,img/fr6.jpg"
+                        class="hover-slideshow"
+                        alt="Internship Projects">
+                    <div class="work-content">
+                        <h4>Freelance Project</h4>
+                        <p>My contracted project was created using Sketchbook, and one person helped me improve 
+                            the artwork before we submitted it to the client. He was using Photoshop and was the one 
+                            who referred me to that client. I started doing digital art in 2023, and now in 2025, I’ve 
+                            improved a lot through hands-on experience and consistent practice.</p>
+                        <div class="tags">
+                            <span class="tag">Sketchbook</span>
+                            <span class="tag">Photoshop</span>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Me Section -->
+        <footer id="contact">
+            <h3>Get in touch</h3>
+                        <div class="divider"></div>
+            <p>
+                What’s next? Feel free to reach out to me if you’re looking for a designer, have a query, or simply want to connect.
+            </p>
+            <div class="contact">
+                <div class="contact-item">
+                    <span class="material-symbols--mail-outline-rounded"></span>
+                    <span data-copy="aineredota16@gmail.com">aineredota16@gmail.com</span>
+                    <span class="solar--copy-linear" title="Copy" onclick="copyToClipboard('aineredota16@gmail.com')"></span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="material-symbols--mail-outline-rounded"></span>
+                    <span data-copy="20210490@cstc.edu.ph">20210490@cstc.edu.ph</span>
+                    <span class="solar--copy-linear" title="Copy" onclick="copyToClipboard('20210490@cstc.edu.ph')"></span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="material-symbols--call"></span>
+                    <span data-copy="0928-385-5593">0928-385-5593</span>
+                    <span class="solar--copy-linear" title="Copy" onclick="copyToClipboard('0928-385-5593')"></span>
+                </div>
+
+                <!-- Grouping the LinkedIn section -->
+                <div class="contact-social">
+                    <p>You may also find me on this platforms!</p>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <span class="logos--linkedin"></span>
+                    </a>
+                </div>
+        </footer>
+
+
