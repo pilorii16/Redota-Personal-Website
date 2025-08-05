@@ -8,11 +8,12 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #ffffff; /* ✅ white base */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff; 
   color: #333;
   line-height: 1.6;
-  overflow-x: hidden; /* ✅ no horizontal scroll bars */
+  overflow-x: hidden;
+  font-weight: 500;
 }
 
 /* ===========================
@@ -43,20 +44,20 @@ nav a {
 }
 
 .btn {
-  background: #212121;               /* clean black */
+  background: #212121;               
   color: #fff;
-  height: 48px;                      /* explicit height for uniform button size */
-  min-width: 160px;                  /* ensures consistent width */
-  line-height: 48px;                 /* vertically center text */
-  text-align: center;                /* center text horizontally */
-  border-radius: 9999px;             /* pill shape */
+  height: 48px;                      
+  min-width: 160px;                 
+  line-height: 48px;             
+  text-align: center;                
+  border-radius: 9999px;            
   text-decoration: none;
-  font-size: 1rem;                   /* clear, readable size */
+  font-size: 1rem;                   
   font-weight: 600;
-  display: inline-block;             /* ensures sizing applies correctly */
-  padding: 0 20px;                   /* horizontal padding for breathing space */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* subtle depth */
-  margin-left: 0.5rem;               /* space from nav links */
+  display: inline-block;           
+  padding: 0 20px;                  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15); 
+  margin-left: 0.5rem;               
 }
 
 .nav-toggle {
@@ -69,15 +70,14 @@ nav a {
 
 @media (max-width: 768px) {
   .btn {
-    background: none;            /* remove background */
-    color: #333;                 /* match nav link color */
-    border-radius: 0;            /* remove pill shape */
-    box-shadow: none;            /* remove shadow */
-    font-weight: 600;            /* keep consistency */
-    text-align: left;            /* align with mobile nav links */
+    background: none;            
+    color: #333;              
+    border-radius: 0;            
+    box-shadow: none;           
+    font-weight: 600;            
+    text-align: left;            
   }
 }
-
 
 /* ===========================
    Introduction / Hero Section
@@ -86,7 +86,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 0 3rem 4rem; /* remove right padding */
+  padding: 3rem 0 3rem 4rem; 
   padding-top: 0;
 
   background-color: #fff;
@@ -162,20 +162,20 @@ nav a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: -4rem; /* allows image to extend beyond container padding */
+  margin-right: -4rem; 
 }
 
 .hero-image {
   width: auto;
   height: auto;
-  max-width: 700px; /* allow full image width */
+  max-width: 700px; 
   object-fit: contain;
   z-index: 1;
 }
 
 @media (max-width: 1024px) {
   .hero {
-    flex-direction: column-reverse; /* image first, then text */
+    flex-direction: column-reverse; 
     align-items: center;
     justify-content: center;
     padding: 0 2rem 2rem 2rem;
@@ -183,7 +183,7 @@ nav a {
   }
 
   .hero-overlap {
-    position: static; /* remove overlap on mobile for clarity */
+    position: static; 
     left: 0;
     background: transparent;
     padding: 0;
@@ -191,20 +191,77 @@ nav a {
 
  .hero-image-wrapper {
     display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center;     /* center vertically if needed */
-    width: 100%;             /* use full width for centering */
-    margin: 0;               /* remove all margins for flush alignment */
-    padding: 0;              /* remove any potential padding */
+    justify-content: center; 
+    align-items: center;     
+    width: 100%;          
+    margin: 0;              
+    padding: 0;              
   }
 
   .hero-image {
-    max-width: 90%;          /* maintain good sizing */
+    max-width: 90%;         
     height: auto;
-    display: block;          /* ensures image respects center */
-    margin: 0 auto;          /* center the image horizontally */
+    display: block;         
+    margin: 0 auto;        
   }
 }
+
+.name-wrapper {
+  display: inline-block;
+  text-align: left;
+}
+
+.paytone-heading {
+  font-family: 'Paytone One', sans-serif;
+  margin: 0;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.paytone-heading.primary {
+  font-size: 4.3rem;
+  position: relative; 
+}
+
+.paytone-heading.secondary {
+  font-size: 2rem;
+  margin-top: -0.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.role-intro {
+  font-size: 1.3rem !important;       
+  font-weight: 550;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.role-intro .static-text {
+  font-size: inherit;
+  font-weight: inherit;
+  white-space: nowrap;
+}
+
+#changing-title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #333;
+  padding-right: 4px;
+  animation: blink-caret 0.75s step-end infinite;
+  font-weight: bold;
+  color: #333;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #333; }
+}
+
 
 /* ===========================
    General Section Styling
