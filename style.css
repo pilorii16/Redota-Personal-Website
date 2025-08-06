@@ -21,7 +21,7 @@ body {
 =========================== */
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
   background-color: #FBC02D;
@@ -29,6 +29,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;
+  width: auto;
 }
 
 .nav-right {
@@ -66,6 +76,14 @@ nav a {
   background: none;
   border: none;
   cursor: pointer;
+  color: #333;
+}
+
+.nav-toggle:focus,
+.nav-toggle:active {
+  outline: none;
+  color: #333;
+  background: none;
 }
 
 @media (max-width: 768px) {
@@ -77,7 +95,12 @@ nav a {
     font-weight: 600;            
     text-align: left;            
   }
+
+  .nav-toggle {
+    display: block;
+  }
 }
+
 
 /* ===========================
    Introduction / Hero Section
@@ -287,14 +310,14 @@ section {
 =========================== */
 .about-section {
   background: url('img/graybg.png') center center / cover no-repeat;
-  padding: 4rem 1rem; /* controls vertical and horizontal breathing space so gray shows visibly */
-  max-width: 2000px; /* allow full image width */
+  padding: 4rem 1rem; 
+  max-width: 2000px; 
 
 }
 
 .about-container {
-  max-width: 1000px; /* your site's consistent content width */
-  margin: 0 auto; /* center horizontally */
+  max-width: 1000px;
+  margin: 0 auto; 
 }
 
 .about-container h2 {
@@ -309,12 +332,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white; /* white cards layered on top of gray */
+  background: white; 
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   gap: 1.5rem;
-  margin: 2rem 0; /* vertical breathing around each card */
+  margin: 2rem 0; 
 }
 
 .about-card.reverse {
