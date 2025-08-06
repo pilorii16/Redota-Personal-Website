@@ -380,12 +380,13 @@ section {
 
 
 /* ===========================
-   Skills Icons
+   Skills Section Styling
 =========================== */
 .skills-section {
   text-align: center;
   padding: 20px;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .skills-section h2 {
@@ -399,46 +400,74 @@ section {
   margin-bottom: 60px;
 }
 
-.skills-grid {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+.skills-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.second-row {
-  margin-top: 10px; 
+.skills-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 28s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100px;
+  justify-content: flex-start;
+  min-width: 120px;
+  height: 150px; /* Ensures consistent box height */
+  margin: 0 20px;
+  text-align: center;
 }
 
 .skill-item img {
   height: 60px;
-  margin-bottom: 10px;
+  width: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
 }
 
 .skill-item p {
   margin: 0;
   font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
+.skill-desc {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+  max-width: 100px;
+  line-height: 1.2;
+}
+
+/* Responsive fix */
 @media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 30px; 
-    margin-bottom: 30px; 
+  .skill-item {
+    min-width: 100px;
+    margin: 0 20px;
+    height: 140px;
   }
 
-  .four-cols {
-    margin-bottom: 10px; 
+  .skill-desc {
+    font-size: 11px;
+    max-width: 80px;
   }
 }
+
 
 /* ===========================
    Work Experience
